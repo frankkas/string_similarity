@@ -297,8 +297,7 @@ json_home_path = Path(args.jsonpath).expanduser().resolve()
 # Connect to mongodb
 myclient = pymongo.MongoClient("mongodb://localhost:9000/")
 print(myclient)
-#mydb = myclient["stringsdatabase"]
-mydb = myclient["testdatabase"]
+mydb = myclient["stringsdatabase"]
 strings_col = mydb["strings"]
 files_col = mydb["samples"]
 
